@@ -34,6 +34,340 @@ const style = {
     p: 4,
   };
 
+function Room1() {
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => {
+      setOpen(true);
+    };
+    const handleClose = () => {
+      setOpen(false);
+    };
+  
+    return (
+      <React.Fragment>
+        <Button onClick={handleOpen}><ZoomInIcon/> 放大</Button>
+        <Modal
+          hideBackdrop
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="child-modal-title"
+          aria-describedby="child-modal-description"
+        >
+          <Box sx={{ ...style, width: 400 }}>
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+                <div className='roomtitle'><BedIcon/> 百日青 201</div>
+            </Typography>
+            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                <img src={room1} alt="room1"/>
+            </Typography>
+            <Button onClick={handleClose}>關閉視窗</Button>
+          </Box>
+        </Modal>
+      </React.Fragment>
+    );
+}
+
+function Room2() {
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => {
+      setOpen(true);
+    };
+    const handleClose = () => {
+      setOpen(false);
+    };
+  
+    return (
+      <React.Fragment>
+        <Button onClick={handleOpen}><ZoomInIcon/> 放大</Button>
+        <Modal
+          hideBackdrop
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="child-modal-title"
+          aria-describedby="child-modal-description"
+        >
+          <Box sx={{ ...style, width: 400 }}>
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+                <div className='roomtitle'><BedIcon/> 江某 202</div>
+            </Typography>
+            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                <img src={room2} alt="room2"/>
+            </Typography>
+            <Button onClick={handleClose}>關閉視窗</Button>
+          </Box>
+        </Modal>
+      </React.Fragment>
+    );
+}
+
+function Room3() {
+const [open, setOpen] = React.useState(false);
+const handleOpen = () => {
+    setOpen(true);
+};
+const handleClose = () => {
+    setOpen(false);
+};
+
+return (
+    <React.Fragment>
+    <Button onClick={handleOpen}><ZoomInIcon/> 放大</Button>
+    <Modal
+        hideBackdrop
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="child-modal-title"
+        aria-describedby="child-modal-description"
+    >
+        <Box sx={{ ...style, width: 400 }}>
+        <Typography id="modal-modal-title" variant="h6" component="h2">
+            <div className='roomtitle'><BedIcon/> 九層吹 203</div>
+        </Typography>
+        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            <img src={room3} alt="room3"/>
+        </Typography>
+        <Button onClick={handleClose}>關閉視窗</Button>
+        </Box>
+    </Modal>
+    </React.Fragment>
+);
+}
+
+function Room4() {
+const [open, setOpen] = React.useState(false);
+const handleOpen = () => {
+    setOpen(true);
+};
+const handleClose = () => {
+    setOpen(false);
+};
+
+return (
+    <React.Fragment>
+    <Button onClick={handleOpen}><ZoomInIcon/> 放大</Button>
+    <Modal
+        hideBackdrop
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="child-modal-title"
+        aria-describedby="child-modal-description"
+    >
+        <Box sx={{ ...style, width: 400 }}>
+        <Typography id="modal-modal-title" variant="h6" component="h2">
+            <div className='roomtitle'><BedIcon/> 石賓 205</div>
+        </Typography>
+        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            <img src={room4} alt="room4"/>
+        </Typography>
+        <Button onClick={handleClose}>關閉視窗</Button>
+        </Box>
+    </Modal>
+    </React.Fragment>
+);
+}
+
+function Room5() {
+const [open, setOpen] = React.useState(false);
+const handleOpen = () => {
+    setOpen(true);
+};
+const handleClose = () => {
+    setOpen(false);
+};
+
+return (
+    <React.Fragment>
+    <Button onClick={handleOpen}><ZoomInIcon/> 放大</Button>
+    <Modal
+        hideBackdrop
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="child-modal-title"
+        aria-describedby="child-modal-description"
+    >
+        <Box sx={{ ...style, width: 400 }}>
+        <Typography id="modal-modal-title" variant="h6" component="h2">
+            <div className='roomtitle'><BedIcon/> 溪哥 206</div>
+        </Typography>
+        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            <img src={room5} alt="room5"/>
+        </Typography>
+        <Button onClick={handleClose}>關閉視窗</Button>
+        </Box>
+    </Modal>
+    </React.Fragment>
+);
+}
+
+function Room6() {
+const [open, setOpen] = React.useState(false);
+const handleOpen = () => {
+    setOpen(true);
+};
+const handleClose = () => {
+    setOpen(false);
+};
+
+return (
+    <React.Fragment>
+    <Button onClick={handleOpen}><ZoomInIcon/> 放大</Button>
+    <Modal
+        hideBackdrop
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="child-modal-title"
+        aria-describedby="child-modal-description"
+    >
+        <Box sx={{ ...style, width: 400 }}>
+        <Typography id="modal-modal-title" variant="h6" component="h2">
+            <div className='roomtitle'><BedIcon/> 拉都希氏 301</div>
+        </Typography>
+        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            <img src={room6} alt="room6"/>
+        </Typography>
+        <Button onClick={handleClose}>關閉視窗</Button>
+        </Box>
+    </Modal>
+    </React.Fragment>
+);
+}
+
+function Room7() {
+const [open, setOpen] = React.useState(false);
+const handleOpen = () => {
+    setOpen(true);
+};
+const handleClose = () => {
+    setOpen(false);
+};
+
+return (
+    <React.Fragment>
+    <Button onClick={handleOpen}><ZoomInIcon/> 放大</Button>
+    <Modal
+        hideBackdrop
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="child-modal-title"
+        aria-describedby="child-modal-description"
+    >
+        <Box sx={{ ...style, width: 400 }}>
+        <Typography id="modal-modal-title" variant="h6" component="h2">
+            <div className='roomtitle'><BedIcon/> 腹斑蛙 302</div>
+        </Typography>
+        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            <img src={room7} alt="room7"/>
+        </Typography>
+        <Button onClick={handleClose}>關閉視窗</Button>
+        </Box>
+    </Modal>
+    </React.Fragment>
+);
+}
+
+function Room8() {
+const [open, setOpen] = React.useState(false);
+const handleOpen = () => {
+    setOpen(true);
+};
+const handleClose = () => {
+    setOpen(false);
+};
+
+return (
+    <React.Fragment>
+    <Button onClick={handleOpen}><ZoomInIcon/> 放大</Button>
+    <Modal
+        hideBackdrop
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="child-modal-title"
+        aria-describedby="child-modal-description"
+    >
+        <Box sx={{ ...style, width: 400 }}>
+        <Typography id="modal-modal-title" variant="h6" component="h2">
+            <div className='roomtitle'><BedIcon/> 小雨蛙 303</div>
+        </Typography>
+        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            <img src={room8} alt="room8"/>
+        </Typography>
+        <Button onClick={handleClose}>關閉視窗</Button>
+        </Box>
+    </Modal>
+    </React.Fragment>
+);
+}
+
+function Room9() {
+const [open, setOpen] = React.useState(false);
+const handleOpen = () => {
+    setOpen(true);
+};
+const handleClose = () => {
+    setOpen(false);
+};
+
+return (
+    <React.Fragment>
+    <Button onClick={handleOpen}><ZoomInIcon/> 放大</Button>
+    <Modal
+        hideBackdrop
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="child-modal-title"
+        aria-describedby="child-modal-description"
+    >
+        <Box sx={{ ...style, width: 400 }}>
+        <Typography id="modal-modal-title" variant="h6" component="h2">
+            <div className='roomtitle'><BedIcon/> 螢火蟲 305</div>
+        </Typography>
+        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            <img src={room9} alt="room9"/>
+        </Typography>
+        <Button onClick={handleClose}>關閉視窗</Button>
+        </Box>
+    </Modal>
+    </React.Fragment>
+);
+}
+
+function Room10() {
+const [open, setOpen] = React.useState(false);
+const handleOpen = () => {
+    setOpen(true);
+};
+const handleClose = () => {
+    setOpen(false);
+};
+
+return (
+    <React.Fragment>
+    <Button onClick={handleOpen}><ZoomInIcon/> 放大</Button>
+    <Modal
+        hideBackdrop
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="child-modal-title"
+        aria-describedby="child-modal-description"
+    >
+        <Box sx={{ ...style, width: 400 }}>
+        <Typography id="modal-modal-title" variant="h6" component="h2">
+            <div className='roomtitle'><BedIcon/> 五色鳥 306</div>
+        </Typography>
+        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            <img src={room10} alt="room10"/>
+        </Typography>
+        <Button onClick={handleClose}>關閉視窗</Button>
+        </Box>
+    </Modal>
+    </React.Fragment>
+);
+}
+
+
+
+
+
 export function Room() {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
@@ -60,202 +394,52 @@ export function Room() {
                     <div className="roomphoto">
                         <div className='roomtitle'><BedIcon/> 百日青 201</div>
                         <img src={room1} alt="room1"/>
-                        <Button onClick={handleOpen}><ZoomInIcon/> 放大</Button>
-                        <Modal
-                        open={open}
-                        onClose={handleClose}
-                        aria-labelledby="modal-modal-title"
-                        aria-describedby="modal-modal-description"
-                        >
-                        <Box sx={style}>
-                            <Typography id="modal-modal-title" variant="h6" component="h2">
-                            <div className='roomtitle'><BedIcon/> 百日青 201</div>
-                            </Typography>
-                            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                            <img src={room1} alt="room1"/>
-                            </Typography>
-                        </Box>
-                        </Modal>
+                        <Room1/>
                     </div>
                     <div className="roomphoto">
-                        <div className='roomtitle'><BedIcon/> 江某 201</div>
+                        <div className='roomtitle'><BedIcon/> 江某 202</div>
                         <img src={room2} alt="room2"/>
-                        <Button onClick={handleOpen}><ZoomInIcon/> 放大</Button>
-                        <Modal
-                        open={open}
-                        onClose={handleClose}
-                        aria-labelledby="modal-modal-title"
-                        aria-describedby="modal-modal-description"
-                        >
-                        <Box sx={style}>
-                            <Typography id="modal-modal-title" variant="h6" component="h2">
-                            <div className='roomtitle'><BedIcon/> 江某 201</div>
-                            </Typography>
-                            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                            <img src={room2} alt="room2"/>
-                            </Typography>
-                        </Box>
-                        </Modal>
+                        <Room2/>
                     </div>
                     <div className="roomphoto">
                         <div className='roomtitle'><BedIcon/> 九層吹 203</div>
                         <img src={room3} alt="room3"/>
-                        <Button onClick={handleOpen}><ZoomInIcon/> 放大</Button>
-                        <Modal
-                        open={open}
-                        onClose={handleClose}
-                        aria-labelledby="modal-modal-title"
-                        aria-describedby="modal-modal-description"
-                        >
-                        <Box sx={style}>
-                            <Typography id="modal-modal-title" variant="h6" component="h2">
-                            <div className='roomtitle'><BedIcon/> 九層吹 203</div>
-                            </Typography>
-                            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                            <img src={room3} alt="room3"/>
-                            </Typography>
-                        </Box>
-                        </Modal>
+                        <Room3/>
                     </div>
                     <div className="roomphoto">
                         <div className='roomtitle'><BedIcon/> 石賓 205</div>
                         <img src={room4} alt="room4"/>
-                        <Button onClick={handleOpen}><ZoomInIcon/> 放大</Button>
-                        <Modal
-                        open={open}
-                        onClose={handleClose}
-                        aria-labelledby="modal-modal-title"
-                        aria-describedby="modal-modal-description"
-                        >
-                        <Box sx={style}>
-                            <Typography id="modal-modal-title" variant="h6" component="h2">
-                            <div className='roomtitle'><BedIcon/> 石賓 205</div>
-                            </Typography>
-                            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                            <img src={room4} alt="room4"/>
-                            </Typography>
-                        </Box>
-                        </Modal>
+                        <Room4/>
                     </div>
                     <div className="roomphoto">
-                        <div className='roomtitle'><BedIcon/> 溪哥 205</div>
+                        <div className='roomtitle'><BedIcon/> 溪哥 206</div>
                         <img src={room5} alt="room5"/>
-                        <Button onClick={handleOpen}><ZoomInIcon/> 放大</Button>
-                        <Modal
-                        open={open}
-                        onClose={handleClose}
-                        aria-labelledby="modal-modal-title"
-                        aria-describedby="modal-modal-description"
-                        >
-                        <Box sx={style}>
-                            <Typography id="modal-modal-title" variant="h6" component="h2">
-                            <div className='roomtitle'><BedIcon/> 溪哥 205</div>
-                            </Typography>
-                            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                            <img src={room5} alt="room5"/>
-                            </Typography>
-                        </Box>
-                        </Modal>
+                        <Room5/>
                     </div>
                     <div className="roomphoto">
                         <div className='roomtitle'><BedIcon/> 拉都希氏 301</div>
                         <img src={room6} alt="room6"/>
-                        <Button onClick={handleOpen}><ZoomInIcon/> 放大</Button>
-                        <Modal
-                        open={open}
-                        onClose={handleClose}
-                        aria-labelledby="modal-modal-title"
-                        aria-describedby="modal-modal-description"
-                        >
-                        <Box sx={style}>
-                            <Typography id="modal-modal-title" variant="h6" component="h2">
-                            <div className='roomtitle'><BedIcon/> 拉都希氏 301</div>
-                            </Typography>
-                            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                            <img src={room6} alt="room6"/>
-                            </Typography>
-                        </Box>
-                        </Modal>
+                        <Room6/>
                     </div>
                     <div className="roomphoto">
                         <div className='roomtitle'><BedIcon/> 腹斑蛙 302</div>
                         <img src={room7} alt="room7"/>
-                        <Button onClick={handleOpen}><ZoomInIcon/> 放大</Button>
-                        <Modal
-                        open={open}
-                        onClose={handleClose}
-                        aria-labelledby="modal-modal-title"
-                        aria-describedby="modal-modal-description"
-                        >
-                        <Box sx={style}>
-                            <Typography id="modal-modal-title" variant="h6" component="h2">
-                            <div className='roomtitle'><BedIcon/> 腹斑蛙 302</div>
-                            </Typography>
-                            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                            <img src={room7} alt="room7"/>
-                            </Typography>
-                        </Box>
-                        </Modal>
+                        <Room7/>
                     </div>
                     <div className="roomphoto">
                         <div className='roomtitle'><BedIcon/> 小雨蛙 303</div>
                         <img src={room8} alt="room8"/>
-                        <Button onClick={handleOpen}><ZoomInIcon/> 放大</Button>
-                        <Modal
-                        open={open}
-                        onClose={handleClose}
-                        aria-labelledby="modal-modal-title"
-                        aria-describedby="modal-modal-description"
-                        >
-                        <Box sx={style}>
-                            <Typography id="modal-modal-title" variant="h6" component="h2">
-                            <div className='roomtitle'><BedIcon/> 小雨蛙 303</div>
-                            </Typography>
-                            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                            <img src={room8} alt="room8"/>
-                            </Typography>
-                        </Box>
-                        </Modal>
+                        <Room8/>
                     </div>
                     <div className="roomphoto">
                         <div className='roomtitle'><BedIcon/> 螢火蟲 305</div>
                         <img src={room9} alt="room9"/>
-                        <Button onClick={handleOpen}><ZoomInIcon/> 放大</Button>
-                        <Modal
-                        open={open}
-                        onClose={handleClose}
-                        aria-labelledby="modal-modal-title"
-                        aria-describedby="modal-modal-description"
-                        >
-                        <Box sx={style}>
-                            <Typography id="modal-modal-title" variant="h6" component="h2">
-                            <div className='roomtitle'><BedIcon/> 螢火蟲 305</div>
-                            </Typography>
-                            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                            <img src={room9} alt="room9"/>
-                            </Typography>
-                        </Box>
-                        </Modal>
+                        <Room9/>
                     </div>
                     <div className="roomphoto">
                         <div className='roomtitle'><BedIcon/> 五色鳥 306</div>
                         <img src={room10} alt="room10"/>
-                        <Button onClick={handleOpen}><ZoomInIcon/> 放大</Button>
-                        <Modal
-                        open={open}
-                        onClose={handleClose}
-                        aria-labelledby="modal-modal-title"
-                        aria-describedby="modal-modal-description"
-                        >
-                        <Box sx={style}>
-                            <Typography id="modal-modal-title" variant="h6" component="h2">
-                            <div className='roomtitle'><BedIcon/> 五色鳥 306</div>
-                            </Typography>
-                            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                            <img src={room10} alt="room10"/>
-                            </Typography>
-                        </Box>
-                        </Modal>
+                        <Room10/>
                     </div>
                 </div>
             </div>
@@ -375,3 +559,5 @@ export function Room() {
     </Containerfull>
   )
 }
+
+
