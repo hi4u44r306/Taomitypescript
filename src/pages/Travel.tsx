@@ -1,12 +1,11 @@
 import { Container } from "react-bootstrap";
 import "../assets/css/all.css"
+import { Containerfull } from "../components/Containerfull";
 
 export function Travel(){
     return (
-        <div className="default">
-            <div>
-            Travel
-            </div>
-        </div>
+        <Containerfull>
+            <h1>Travel</h1>
+        </Containerfull>
     )
 }

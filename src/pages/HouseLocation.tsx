@@ -1,12 +1,10 @@
-import { Container } from "react-bootstrap";
 import "../assets/css/all.css"
+import { Containerfull } from "../components/Containerfull";
 
 export function HouseLocation(){
     return (
-        <div className="default">
-            <div>
-            HouseLocation
-            </div>
-        </div>
+        <Containerfull>
+            <h1>Location</h1>
+        </Containerfull>
     )
 }

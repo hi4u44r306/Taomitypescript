@@ -1,10 +1,11 @@
 
 import '../assets/css/all.css';
+import { Containerfull } from '../components/Containerfull';
 
 export function Home(){
     return (
-        <div className="home">
-            <h1></h1>
-        </div>
+        <Containerfull>
+            <h1>Home</h1>
+        </Containerfull>
     )
 }
