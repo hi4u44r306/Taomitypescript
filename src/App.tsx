@@ -2,7 +2,6 @@ import { Routes, Route} from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
-import { Navigation } from './components/Navigation';
 import './assets/css/app.css'
 import { Room } from './pages/Room';
 import { Photo } from './pages/Photo';
