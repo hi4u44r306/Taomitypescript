@@ -1,8 +1,4 @@
 .Containerfull {
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     0deg,
@@ -13,10 +9,6 @@
   overflow-y: auto;
 }
 .copyright {
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   background-color: #fcf8ec;
   display: flex;
   justify-content: space-evenly;
@@ -73,16 +65,8 @@
 @media only screen and (max-width: 970px) {
   .Containerfull {
     height: 90vh;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
   }
   .copyright {
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     background-color: #fcf8ec;
     display: flex;
     flex-direction: column;
