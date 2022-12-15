@@ -1,0 +1,39 @@
+.Containerfull {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(77, 191, 255, 1) 100%
+  );
+  height: 90vh;
+  overflow-y: auto;
+}
+.copyright {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #fcf8ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  height: 20vh;
+  align-items: center;
+  padding: 40px;
+}
+@media only screen and (max-width: 970px) {
+  .Containerfull {
+    height: 90vh;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}

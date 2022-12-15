@@ -32,7 +32,7 @@ const rows = [
 
 ];
 
-export function Roomprice() {
+export function Roompriceboard() {
   return (
     <div className='d-flex'>
       <TableContainer component={Paper}>

@@ -1,4 +1,5 @@
 import '../assets/css/containerfull.css'
+
 type Containerprops ={
     children: any;
 }

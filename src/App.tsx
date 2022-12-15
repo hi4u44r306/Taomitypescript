@@ -8,10 +8,12 @@ import { Room } from './pages/Room';
 import { Photo } from './pages/Photo';
 import { Travel } from './pages/Travel';
 import { HouseLocation } from './pages/HouseLocation';
+import { NavigationMobile } from './components/NavigationMobile';
+
 function App() {
   return( 
     <>
-      <Navigation/>
+      <NavigationMobile/>
       <div style={{backgroundColor:"#DCDCDC"}}>
         <Routes>
           <Route path="/" element={<About/>}/>

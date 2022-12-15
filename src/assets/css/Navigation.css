@@ -1,37 +1,45 @@
-.navbar {
-  margin-bottom: 5px;
-  height: 10vh !important;
-  padding: none !important;
-  background-color: #bbd3fa !important;
-}
-.navbar-brand {
-  font-size: 20px !important;
-  font-family: "Signika Negative", sans-serif;
-  font-weight: 700;
-}
-.offcanvas-title {
-  font-size: 20px !important;
-}
-.username {
-  font-weight: 800;
-  font-size: 15px;
+nav {
+  height: 10vh;
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  background-color: #f6f6f6;
+  user-select: none;
+}
+nav div {
+  display: flex;
+  padding: 10px;
   align-items: center;
+  justify-content: center;
 }
-.icons {
-  svg {
-    color: rgb(81, 204, 43);
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-  }
+nav .navigation {
+  flex-flow: row wrap;
 }
-.offcanvas-header {
-  padding: 20px 20px;
+nav .navigation a {
+  color: #000;
+  padding-right: 10px;
+  font-size: 1.1rem;
 }
+nav .navigation a:hover {
+  transform: scale(1.1);
+}
+nav .language .language-head {
+  flex-direction: column;
+  padding: 0;
+  align-items: flex-start;
+}
+nav .language .language-head div {
+  padding: 0;
+}
+nav .language .language-head .expand-grp p {
+  color: darkgrey;
+}
+nav .language .expand-grp {
+  padding: 0;
+}
+
 .navbackground {
-  background-color: #fcf8ec;
+  background-color: #f4f9ff;
   height: 10vh;
   // display: flex;
   align-items: center;
@@ -57,56 +65,17 @@
   font-size: 20px;
 }
 
-.dropdown-menu {
-  width: 250px !important;
-}
-.dropdown-toggle {
-  color: #000000;
-}
-.dropdown-toggle:hover {
-  color: #f82222;
-  // background-color: rgb(212, 212, 212);
-  // border-radius: 20px;
-}
-.navusername {
-  color: #005b7f;
-  font-weight: 600;
-}
-
-/* .navlink {
+.navlink {
   color: black !important;
-  display:flex !important;
-  font-family: "Signika Negative";
-  font-weight: 800 !important;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
   font-size: 15px;
-  padding-left: none;
-  padding-right: none;
-} */
-.nav-link {
-  padding-left: none;
-  padding-right: none;
-  display: flex;
-  align-items: center;
-  font-weight: 800 !important;
-  font-size: 15px !important;
-}
-.dropdown-menu {
-  background-color: #f7edce;
 }
 
-@media (max-width: 768px) {
-  .navbar-brand {
-    font-size: 18px !important;
-  }
-  .offcanvas-title {
-    font-size: 15px !important;
+@media only screen and (max-width: 970px) {
+  nav {
+    display: none;
   }
 }
-@media (max-width: 548px) {
-  .navbar-brand {
-    font-size: 15px !important;
-  }
-  .offcanvas-title {
-    font-size: 15px !important;
-  }
-}
+
+/*# sourceMappingURL=Navigation.scss.map */

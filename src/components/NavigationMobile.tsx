@@ -1,11 +1,13 @@
+import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import { NavLink } from 'react-router-dom'
 import '../assets/css/Navigation.css'
-import Logo from '../../public/imgs/tao-mi.gif'
+import { NavLink } from 'react-router-dom'
+// import '../assets/css/Navigation.css'
+import Logo from '../assets/img/tao-mi.gif';
 import HomeIcon from '@mui/icons-material/Home';
 import BedIcon from '@mui/icons-material/Bed';
 import LandscapeIcon from '@mui/icons-material/Landscape';
@@ -13,13 +15,20 @@ import YardIcon from '@mui/icons-material/Yard';
 import InfoIcon from '@mui/icons-material/Info';
 import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 
-export function Navigation() {
+
+
+
+
+export function NavigationMobile() {
+    
   return (
-    <>
+    <div>
       {['lg'].map((expand) => (
-        <Navbar collapseOnSelect={true} key={expand} expand={expand} className="navbar">
+        <Navbar collapseOnSelect={true} key={expand} expand={expand} className="navbackground">
           <Container fluid>
-            <Navbar.Brand to="/" as={NavLink} href="/"><img src={Logo} alt="logo"/></Navbar.Brand>
+            <Navbar.Brand to="/" as={NavLink} href="/">
+              <img src={Logo} alt="logo"/>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -33,12 +42,12 @@ export function Navigation() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link className='navlink' to="/" href="/" as={NavLink}>
+                  {/* <Nav.Link className='navlink' to="/" href="/" as={NavLink}>
                     <div style={{display:"flex", alignItems:"center"}}>
                       <HomeIcon fontSize="small"/> 首頁
                     </div>
-                  </Nav.Link>
-                  <Nav.Link className='navlink' to="/about" href="/about" as={NavLink}>
+                  </Nav.Link> */}
+                  <Nav.Link className='navlink' to="/" href="/" as={NavLink}>
                     <div style={{display:"flex", alignItems:"center"}}>
                       <InfoIcon fontSize="small"/> 關於若瑟桃米
                     </div>
@@ -88,6 +97,6 @@ export function Navigation() {
           </Container>
         </Navbar>
       ))}
-    </>
+    </div>
   );
 }

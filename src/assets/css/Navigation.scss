@@ -1,0 +1,33 @@
+.navbackground {
+  background-color: #f4f9ff;
+  height: 10vh;
+  // display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+}
+.toggle {
+  // background-color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  font-weight: 700;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+.navbar-toggler-icon {
+  font-size: 20px;
+}
+
+.navlink {
+  color: black !important;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}

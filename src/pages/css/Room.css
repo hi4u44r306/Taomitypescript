@@ -1,0 +1,108 @@
+.roominfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  gap: 10px;
+  font-size: 15px;
+  background-color: #f0f8ff;
+}
+.roomphotos {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.roomphoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  width: 300px;
+}
+.roomphoto > img {
+  width: 200px;
+  // height: auto;
+}
+.roomtitle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.price {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pricetag {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  font-size: 18px;
+  background-color: #f6f1d1;
+  padding: 10px;
+  border-radius: 20px;
+}
+.facility {
+  position: relative;
+  // display: flex;
+  justify-content: start;
+  flex-direction: row;
+  align-content: start;
+  align-items: start;
+  gap: 10px;
+  padding: 15px;
+  width: 65vw;
+}
+.pricetable {
+  width: 90vw;
+  border: 5px solid gray;
+}
+.pricetablecell {
+  font-family: "Helvetica Neue" !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  padding: 5px !important;
+}
+
+@media (max-width: 768px) {
+  .facility {
+    position: relative;
+    // display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-content: start;
+    align-items: start;
+    gap: 10px;
+    padding: 30px;
+    width: 95vw;
+  }
+  .roomphotos {
+    gap: 5px;
+  }
+  .roomphoto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+  }
+  .pricetable {
+    width: 90vw;
+    border: 5px solid gray;
+  }
+  .pricetablecell {
+    font-family: "Helvetica Neue" !important;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    padding: 5px !important;
+  }
+}
