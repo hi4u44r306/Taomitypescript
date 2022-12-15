@@ -3,6 +3,12 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import CallIcon from '@mui/icons-material/Call';
 import InfoIcon from '@mui/icons-material/Info';
 import InsertLinkIcon from '@mui/icons-material/InsertLink';
+import Nav from 'react-bootstrap/Nav';
+import { NavLink } from 'react-router-dom'
+import BedIcon from '@mui/icons-material/Bed';
+import LandscapeIcon from '@mui/icons-material/Landscape';
+import YardIcon from '@mui/icons-material/Yard';
+import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 
 type Containerprops ={
     children: any;
@@ -27,11 +33,36 @@ export function Containerfull({children}:Containerprops){
                     <div className='copyrightsection'>
                         <div className='sectiontitle'><InsertLinkIcon/> Link</div>
                         <div className='linkcontainer'>
-                            <a href='/'>關於若瑟桃米</a>
-                            <a href='/room'>若瑟寢宮</a>
-                            <a href='/photo'>翠綠庭園</a>
-                            <a href='/travel'>周邊景點</a>
-                            <a href='/location'>交通導覽</a>
+                        <Nav.Link className='navlink' to="/" href="/" as={NavLink}>
+                            <div style={{display:"flex", alignItems:"center"}}>
+                            <InfoIcon fontSize="small"/> 關於若瑟桃米
+                            </div>
+                        </Nav.Link>
+                        <Nav.Link className='navlink' to="/room" href="/room" as={NavLink}>
+                            <div style={{display:"flex", alignItems:"center"}}>
+                            <BedIcon fontSize="small"/> 若瑟寢宮
+                            </div>
+                        </Nav.Link>
+                        <Nav.Link className='navlink' to="/photo" href="/photo" as={NavLink}>
+                            <div style={{display:"flex", alignItems:"center"}}>
+                            <YardIcon fontSize="small"/> 翠綠庭園
+                            </div>
+                        </Nav.Link>
+                        <Nav.Link className='navlink' to="/travel" href="/travel" as={NavLink}>
+                            <div style={{display:"flex", alignItems:"center"}}>
+                            <LandscapeIcon fontSize="small"/> 周邊景點
+                            </div>
+                        </Nav.Link>
+                        <Nav.Link className='navlink' to="/location" href="/location" as={NavLink}>
+                            <div style={{display:"flex", alignItems:"center"}}>
+                            <DirectionsCarIcon fontSize="small"/> 交通導覽
+                            </div>
+                        </Nav.Link>
+                        {/* <a href='/'>關於若瑟桃米</a>
+                        <a href='/room'>若瑟寢宮</a>
+                        <a href='/photo'>翠綠庭園</a>
+                        <a href='/travel'>周邊景點</a>
+                        <a href='/location'>交通導覽</a> */}
                         </div>
                     </div>
                 </div>

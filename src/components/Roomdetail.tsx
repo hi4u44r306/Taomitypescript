@@ -37,7 +37,7 @@ export function Roomdetail({img, name, normal, holiday, describe}:RoomdetailProp
 
     return (
         <React.Fragment>
-        <div className="checkdetailbtn" onClick={handleOpen}><SearchIcon/> 查看細節</div>
+        <div className="checkdetailbtn" onClick={handleOpen}><SearchIcon fontSize="small"/> 查看細節</div>
         <Modal
             hideBackdrop
             open={open}
@@ -60,7 +60,7 @@ export function Roomdetail({img, name, normal, holiday, describe}:RoomdetailProp
             <div className="describe">
                 備註 : {describe}
             </div>
-            <Button onClick={handleClose}>關閉視窗</Button>
+            <div className="closebtn" onClick={handleClose}>關閉視窗</div>
             </Box>
         </Modal>
         </React.Fragment>

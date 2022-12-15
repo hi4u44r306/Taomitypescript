@@ -25,11 +25,12 @@
   gap: 20px;
   background-color: white;
   padding: 10px;
+  border: 2px solid black;
   border-radius: 20px;
-  width: 300px;
+  width: 350px;
 }
 .roomphoto > img {
-  width: 200px;
+  width: 300px;
 }
 .roomphoto:hover {
   transition: 0.3s ease-in-out;
@@ -38,9 +39,9 @@
 .roomtitle {
   display: flex;
   align-items: center;
-  font-weight: 700;
+  font-weight: 600;
   justify-content: center;
-  gap: 5px;
+  gap: 15px;
 }
 .price {
   position: relative;
@@ -59,7 +60,6 @@
 }
 .facility {
   display: flex;
-
   align-items: flex-start;
   gap: 30px;
   padding: 15px;
@@ -95,11 +95,27 @@
   display: flex;
   justify-content: center;
   font-weight: 700;
-  background-color: #fcf8ec;
+  background-color: #f6b26b;
+  border-radius: 20px;
   padding: 10px;
 }
 .checkdetailbtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
   background-color: pink;
+  padding: 10px 20px 10px 20px;
+  margin: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.closebtn {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  color: white;
+  font-weight: 700;
   padding: 10px 20px 10px 20px;
   margin: 10px;
   border-radius: 20px;
