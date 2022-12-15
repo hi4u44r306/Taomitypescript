@@ -6,7 +6,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import '../assets/css/Navigation.css'
 import { NavLink } from 'react-router-dom'
-// import '../assets/css/Navigation.css'
 import Logo from '../assets/img/tao-mi.gif';
 import HomeIcon from '@mui/icons-material/Home';
 import BedIcon from '@mui/icons-material/Bed';

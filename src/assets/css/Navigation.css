@@ -1,4 +1,4 @@
-nav {
+/* nav {
   height: 10vh;
   display: flex;
   flex-flow: row wrap;
@@ -36,7 +36,7 @@ nav .language .language-head .expand-grp p {
 }
 nav .language .expand-grp {
   padding: 0;
-}
+} */
 
 .navbackground {
   background-color: #f4f9ff;
