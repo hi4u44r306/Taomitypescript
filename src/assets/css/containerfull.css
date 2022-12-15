@@ -1,0 +1,33 @@
+.Containerfull {
+  font-family: "Helvetica Neue";
+  margin-top: 5px;
+  margin-bottom: 5px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #fcf8ec; */
+  height: 75vh;
+  width: 100vw;
+  overflow-y: auto;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(77, 191, 255, 1) 100%
+  );
+}
+@media only screen and (max-width: 970px) {
+  .Containerfull {
+    height: 75vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
