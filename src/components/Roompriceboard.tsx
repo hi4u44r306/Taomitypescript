@@ -6,7 +6,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import '../assets/css/Room.css'
+import '../assets/css/Roomprice.css'
 
 function createData(
   name: string,
@@ -36,7 +36,7 @@ export function Roompriceboard() {
   return (
     <div className='d-flex'>
       <TableContainer component={Paper}>
-        <Table sx={{ minWidth: "50vw" }} className="pricetable" aria-label="simple table">
+        <Table sx={{ minWidth: "70vw" }} className="pricetable" aria-label="simple table">
           <TableHead>
             <TableRow>
               <TableCell className="pricetablecell" align="center">寢&nbsp;宮</TableCell>

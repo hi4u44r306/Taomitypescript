@@ -1,5 +1,4 @@
 
-import '../assets/css/all.css';
 import { Containerfull } from '../components/Containerfull';
 
 export function Home(){

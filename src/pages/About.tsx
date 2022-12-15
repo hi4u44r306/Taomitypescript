@@ -2,14 +2,57 @@ import "../assets/css/about.css"
 import pic01 from '../../public/imgs/pic01.jpg'
 import pic02 from '../../public/imgs/pic02.jpg'
 import { Containerfull } from "../components/Containerfull";
+import Carousel from 'react-bootstrap/Carousel';
+import { SetStateAction, useState } from 'react';
 
 export function About() {
+    const [index, setIndex] = useState(0);
+
+    const handleSelect = (selectedIndex: SetStateAction<number>, e: any) => {
+        setIndex(selectedIndex);
+    };
     return (
         <Containerfull>
             <div className="abouttitle">
                 <span style={{ fontSize: "25px" }}>關於若瑟桃米</span>
                 <span style={{ fontSize: "15px" }}>Taomi Profile</span>
             </div>
+            <div style={{width:"30%", height:"300px"}}>
+                <Carousel activeIndex={index} onSelect={handleSelect} controls={false} fade>
+                <Carousel.Item interval={2000}>
+                    <img
+                    className="d-block w-100"
+                      src={pic01}
+                    alt="First slide"
+                    />
+                </Carousel.Item>
+
+                <Carousel.Item interval={2000}>
+                    <img
+                    className="d-block w-100"
+                      src={pic02}
+                    alt="Second slide"
+                    />
+                </Carousel.Item>
+
+                {/* <Carousel.Item interval={2000}>
+                    <img
+                    className="d-block w-100"
+                    //   src={a3}
+                    alt="Third slide"
+                    />
+                </Carousel.Item>
+
+                <Carousel.Item interval={2000}>
+                    <img
+                    className="d-block w-100"
+                    //   src={a4}
+                    alt="Forth slide"
+                    />
+                </Carousel.Item> */}
+                </Carousel>
+            </div>
+            
             <div className="photocontainer">
                 <div className="photo">
                     <img style={{ maxWidth: "100%", width: "25%", height: "auto" }} src={pic01} alt="01" />
