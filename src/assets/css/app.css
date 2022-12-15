@@ -1,17 +1,1 @@
-.copyrightspan {
-  display: flex;
-  justify-content: center;
-  font-size: 10px;
-  width: 90vw;
-}
-.design {
-  font-size: 5px;
-}
 
-@media (max-width: 768px) {
-  .copyright {
-    font-size: 12px !important;
-    display: flex;
-    flex-direction: column;
-  }
-}
