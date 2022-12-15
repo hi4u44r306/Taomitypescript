@@ -17,7 +17,7 @@
   font-weight: 800;
   height: 30vh;
   align-items: center;
-  padding: 30px;
+  padding: 0px 30px 0px 30px;
   gap: 5vw;
 }
 .sectiontitle {
@@ -57,6 +57,15 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  background-color: #fcf8ec;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 20px;
 }
 .copyrightsection {
   display: flex;

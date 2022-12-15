@@ -44,6 +44,7 @@ export function Containerfull({children}:Containerprops){
                     <div>Web Design By Victor</div>
                 </div>
             </div>
+            <div className='bottom'>南投埔里．若瑟桃米民宿　Tao-Mi Country 版權所有 2022 © Copyright Reserved.</div>
         </div>
     )
 }
