@@ -1,13 +1,10 @@
-.home-music-container {
-  display: grid;
-  grid-template-columns: 18% 80%;
-  user-select: none;
+.homebgcontainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0 0 8px 8px white inset;
 }
-
-@media only screen and (max-width: 970px) {
-  .home-music-container {
-    display: flex;
-  }
+.homebg {
+  width: 100%;
+  box-shadow: 0 0 8px 8px white inset;
 }
-
-/*# sourceMappingURL=Home.scss.map */

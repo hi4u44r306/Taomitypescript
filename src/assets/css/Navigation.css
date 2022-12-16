@@ -1,3 +1,9 @@
+.offcanvas.offcanvas-end {
+  width: fit-content !important;
+}
+.offcanvas-body {
+  padding: 0 !important;
+}
 .navbackground {
   background-color: #f4f9ff;
   height: 10vh;
@@ -24,12 +30,16 @@
 .navbar-toggler-icon {
   font-size: 20px;
 }
-
 .navlink {
   color: black !important;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: 15px;
+  padding: 0 !important;
+}
+.nav-link:hover {
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 5px 20px 3px rgba(168, 168, 168, 0.681);
 }
 
 @media only screen and (max-width: 970px) {

@@ -6,6 +6,7 @@ import { Photo } from './pages/Photo';
 import { Travel } from './pages/Travel';
 import { HouseLocation } from './pages/HouseLocation';
 import { NavigationMobile } from './components/NavigationMobile';
+import { Home } from './pages/Home';
 
 function App() {
   return( 
@@ -13,7 +14,8 @@ function App() {
       <NavigationMobile/>
       <div style={{backgroundColor:"#DCDCDC"}}>
         <Routes>
-          <Route path="/" element={<About/>}/>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<About/>}/>
           <Route path="/room" element={<Room/>}/>
           <Route path="/photo" element={<Photo/>}/>
           <Route path="/travel" element={<Travel/>}/>

@@ -35,41 +35,36 @@ export function Containerfull({children}:Containerprops){
                         <div className='linkcontainer'>
                         <Nav.Link className='navlink' to="/" href="/" as={NavLink}>
                             <div style={{display:"flex", alignItems:"center"}}>
-                            <InfoIcon fontSize="small"/> 關於若瑟桃米
+                             關於若瑟桃米
                             </div>
                         </Nav.Link>
                         <Nav.Link className='navlink' to="/room" href="/room" as={NavLink}>
                             <div style={{display:"flex", alignItems:"center"}}>
-                            <BedIcon fontSize="small"/> 若瑟寢宮
+                             若瑟寢宮
                             </div>
                         </Nav.Link>
                         <Nav.Link className='navlink' to="/photo" href="/photo" as={NavLink}>
                             <div style={{display:"flex", alignItems:"center"}}>
-                            <YardIcon fontSize="small"/> 翠綠庭園
+                             翠綠庭園
                             </div>
                         </Nav.Link>
                         <Nav.Link className='navlink' to="/travel" href="/travel" as={NavLink}>
                             <div style={{display:"flex", alignItems:"center"}}>
-                            <LandscapeIcon fontSize="small"/> 周邊景點
+                             周邊景點
                             </div>
                         </Nav.Link>
                         <Nav.Link className='navlink' to="/location" href="/location" as={NavLink}>
                             <div style={{display:"flex", alignItems:"center"}}>
-                            <DirectionsCarIcon fontSize="small"/> 交通導覽
+                             交通導覽
                             </div>
                         </Nav.Link>
-                        {/* <a href='/'>關於若瑟桃米</a>
-                        <a href='/room'>若瑟寢宮</a>
-                        <a href='/photo'>翠綠庭園</a>
-                        <a href='/travel'>周邊景點</a>
-                        <a href='/location'>交通導覽</a> */}
                         </div>
                     </div>
                 </div>
                 <div className='right'>
                     <div className='copyrightsection'>
                         <div className='sectiontitle'><InfoIcon/> Information</div>
-                        <div><a href="https://www.ncpb.gov.tw/sub/index.aspx?m1=23" target="_blank" rel="noreferrer">南投縣警察局埔里分局 049-2982429</a></div>
+                        <div><a href="https://www.ncpb.gov.tw/sub/index.aspx?m1=23" target="_blank" rel="noreferrer" className='policelink'>南投縣警察局埔里分局 049-2982429</a></div>
                         <div>南投縣合法民宿394號</div>
                     </div>
                     <div>Web Design By Victor</div>

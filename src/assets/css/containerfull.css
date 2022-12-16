@@ -1,3 +1,6 @@
+:root {
+  --footercolor: #544318;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -30,15 +33,16 @@
   overflow-y: auto;
 }
 .copyright {
-  background-color: #fcf8ec;
+  background-color: var(--footercolor);
+  color: #c3b49e;
   display: flex;
   justify-content: space-evenly;
+  align-items: flex-start;
   font-family: "Nunito", sans-serif;
   font-size: 12px;
   font-weight: 800;
   height: 30vh;
-  align-items: center;
-  padding: 0px 30px 0px 30px;
+  padding: 30px 30px 0px 30px;
   gap: 2vw;
 }
 .sectiontitle {
@@ -62,17 +66,21 @@
   flex-wrap: wrap;
   gap: 20px;
 }
+.policelink {
+  color: #d89b30 !important;
+}
 .linkcontainer > a {
-  background-color: pink;
+  /* background-color: pink; */
   padding: 10px;
   border-radius: 20px;
-  color: black;
+  color: #b07c1c !important;
 }
 .linkcontainer > a:link {
   text-decoration: none;
 }
 .linkcontainer > a:hover {
   text-decoration: underline;
+  color: red !important;
 }
 .right {
   display: flex;
@@ -82,11 +90,13 @@
 .bottom {
   display: flex;
   justify-content: center;
-  background-color: #fcf8ec;
+  background-color: var(--footercolor);
+  color: #c3b49e;
   font-family: "Nunito", sans-serif;
   font-size: 15px;
   font-weight: 800;
-  padding: 20px;
+  padding: 10px 0px 10px 0px;
+  border-bottom: 20px solid #85b01f;
 }
 .copyrightsection {
   display: flex;
@@ -97,7 +107,6 @@
     height: 90vh;
   }
   .copyright {
-    background-color: #fcf8ec;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
