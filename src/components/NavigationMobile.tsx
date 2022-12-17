@@ -39,7 +39,7 @@ export function NavigationMobile() {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 ">
+                <Nav className="justify-content-end flex-grow-1 mobile">
                   <Nav.Link className='navlink' to="/about" href="/about" as={NavLink}>
                     <div style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
                       {/* <InfoIcon fontSize="small"/> 關於若瑟桃米 */}

@@ -1,0 +1,46 @@
+.PhotoMain {
+  display: flex;
+  flex-direction: column;
+}
+.test {
+  display: flex;
+}
+.photos {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(77, 191, 255, 1) 100%
+  );
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 60px;
+  padding: 30px;
+}
+.tapecontainer {
+  position: relative;
+  top: 29px;
+  display: flex;
+  justify-content: center;
+}
+
+.photoimgcontainer {
+  border-top: 40px solid white;
+  border-right: 20px solid white;
+  border-bottom: 30px solid white;
+  border-left: 20px solid white;
+  box-shadow: -4px 2px 12px -4px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: -4px 2px 12px -4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -4px 2px 12px -4px rgba(0, 0, 0, 1);
+}
+.photoimg {
+  border-top: 15px solid #dcdcdc;
+  border-bottom: 15px solid #dcdcdc;
+  height: 100px;
+}
+.photoimghorizontal {
+  height: 100px;
+  border-left: 20px solid #dcdcdc;
+  border-right: 20px solid #dcdcdc;
+}

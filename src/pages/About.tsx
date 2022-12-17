@@ -41,8 +41,8 @@ export function About() {
                     </Carousel>
                 </div> */}
                 <div className="mainphotocontainer">
-                    <div className="photocontainer">
-                        <div className="photo">
+                    <div className="aboutphotocontainer">
+                        <div className="aboutphoto">
                             <img className="aboutimg" src={pic01} alt="01" />
                             <div className="poemcontainer">
                                 <span>山林裡的 若瑟桃米民宿</span>

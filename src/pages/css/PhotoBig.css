@@ -1,0 +1,55 @@
+.photobigroomdetail {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  padding: 32px;
+  border-radius: 40px;
+}
+.photocheckdetailbtn {
+  position: relative;
+  top: -35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 15px;
+  margin: 10px;
+  cursor: pointer;
+}
+.photobigimgcontainer {
+  width: 60vw;
+}
+.photobigimg {
+  width: 80% !important;
+}
+.photobigclosebtn {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  padding: 10px 20px 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 10px;
+}
+.horzontial {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .photobigimgcontainer {
+    width: 90vw;
+  }
+}

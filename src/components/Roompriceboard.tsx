@@ -10,12 +10,12 @@ import '../assets/css/Roomprice.css'
 
 function createData(
   name: string,
-  calories: number,
-  fat: string,
-  carbs: string,
-  protein: string,
+  roomnumber: number,
+  normalprice: string,
+  holidayprice: string,
+  description: string,
 ) {
-  return { name, calories, fat, carbs, protein };
+  return { name, roomnumber, normalprice, holidayprice, description };
 }
 
 const rows = [
@@ -55,10 +55,10 @@ export function Roompriceboard() {
                 <TableCell className="pricetablecell"  align="center" component="th" scope="row">
                   {row.name}
                 </TableCell>
-                <TableCell className="pricetablecell" align="center">{row.calories}</TableCell>
-                <TableCell style={{fontSize:10, fontWeight:700, color:"red"}} align="center">{row.fat}</TableCell>
-                <TableCell style={{fontSize:10, fontWeight:700, color:"green"}} align="center">{row.carbs}</TableCell>
-                <TableCell className="pricetablecell" align="left">{row.protein}</TableCell>
+                <TableCell className="pricetablecell" align="center">{row.roomnumber}</TableCell>
+                <TableCell style={{fontSize:10, fontWeight:700, color:"red"}} align="center">{row.normalprice}</TableCell>
+                <TableCell style={{fontSize:10, fontWeight:700, color:"green"}} align="center">{row.holidayprice}</TableCell>
+                <TableCell className="pricetablecell" align="left">{row.description}</TableCell>
               </TableRow>
             ))}
           </TableBody>

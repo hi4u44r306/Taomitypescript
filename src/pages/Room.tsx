@@ -1,4 +1,3 @@
-import React from 'react'
 import titleword from '.././assets/img/titleword.jpg'
 import room1 from '.././assets/img/roompic01.jpg'
 import room2 from '.././assets/img/roompic02.jpg'
@@ -16,9 +15,14 @@ import facility3 from '.././assets/img/facility3.jpg'
 import './css/Room.css'
 import BedIcon from '@mui/icons-material/Bed';
 import { Roompriceboard } from '../components/Roompriceboard'
-import { useState } from 'react'
 import { Containerfull } from '../components/Containerfull'
 import { Roomdetail } from '../components/Roomdetail'
+import title01 from '../assets/img/Room/title01.jpg';
+import title02 from '../assets/img/Room/title02.jpg';
+import title03 from '../assets/img/Room/title05.gif';
+import title04 from '../assets/img/Room/title03.jpg';
+import title05 from '../assets/img/Room/title04.jpg';
+import picleft from './css/picleft.jpg';    
 
 export function Room() {
     const roomdb = [
@@ -95,7 +99,7 @@ export function Room() {
     ]
   return (
     <Containerfull>
-        <div style={{fontFamily:"Signika Negative", fontWeight:700}}>
+        <div className="Roomcontainer">
             <img style={{width:"100%"}} src={titleword} alt="#"/>
             <div className="roominfo">
                 <span>
@@ -105,20 +109,20 @@ export function Room() {
                     對外獨立窗讓房間涼爽而光線充足 每扇窗看出 都是一道風景
                 </span>
             </div>
-            <div className="pricetag">
+            {/* <div className="pricetag">
                 <span>
                     各式房型
                 </span>
-            </div>
+            </div> */}
             <div className='d-flex justify-content-center'>
                 <div className='roomphotos'>
                 {
                     roomdb.map(room => {
                         return (
                             <div className='roomphoto' key={room.name}>
-                                <div className='roomtitle'><BedIcon/> {room.name}</div>
+                                <div className='roomtitle'> {room.name}</div>
                                 <img src={room.image} alt={"#"}/>
-                                <Roomdetail img={room.image} name={room.name} normal={room.noramlprice} holiday={room.holidayprice} describe={room.describe}/>
+                                {/* <Roomdetail img={room.image} name={room.name} normal={room.noramlprice} holiday={room.holidayprice} describe={room.describe}/> */}
                             </div>
                         )
                     })
@@ -128,24 +132,37 @@ export function Room() {
 
             <div className="price">
                 <div className="pricetag">
-                    房價表 Room Price
+                    <img className='pricetitle' src={title01} alt="title01"/>
                 </div>
-                <div style={{display:"flex", justifyContent:"center", margin:"5px", fontSize:15, color:"red"}}>
-                    每加一床500元
-                </div>
-                <div style={{display:"flex", justifyContent:"center", margin:"5px", fontSize:15, color:"red"}}>
-                    ★平日：週日～週四　★假日：週五、週六
-                </div>
-                <div style={{display:"flex", justifyContent:"center", margin:"5px", fontSize:15, color:"red"}}>
-                    ★平日單間，續住另有優惠，請電洽。  
-                </div>
-                <div style={{display:"flex", justifyContent:"center"}}>
-                    <Roompriceboard/>
+                
+                <div className='priceboardwithbankaccount'>
+                    <div>
+                        <div className='bankdetail'>
+                            <span>局號 : 0121099</span>
+                            <span>帳號 : 0858601</span>
+                            <span>劃撥郵局 : 蘆竹郵局</span>
+                            <span>(ATM轉帳代號 : 700)</span>
+                            <span>戶名 : 郭偉儒</span>
+                        </div>
+                        <img className='picleft' src={picleft} alt="picleft"/>
+                    </div>
+                    <div style={{display:"flex", alignItems:"center", flexDirection:"column"}}>
+                        <div style={{display:"flex", justifyContent:"center", alignItems:"center",margin:"5px", fontSize:15, color:"red"}}>
+                        每加一床500元
+                        </div>
+                        <div style={{display:"flex", justifyContent:"center", margin:"5px", fontSize:15, color:"red"}}>
+                            ★平日：週日～週四　★假日：週五、週六
+                        </div>
+                        <Roompriceboard/>
+                        <div style={{display:"flex", justifyContent:"center", margin:"5px", fontSize:15, color:"red"}}>
+                            ★平日單間，續住另有優惠，請電洽。  
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div className="pricetag">
-                房間設施 Room Facility
+                <img className='pricetitle' src={title02} alt="title02"/>
             </div>
             <div style={{display:"flex", justifyContent:"center"}}>
                 <div className="facility">
@@ -169,7 +186,7 @@ export function Room() {
             </div>
 
             <div className="pricetag">
-                室內注意事項 Room Explain
+                <img className='pricetitle' src={title03} alt="title03"/>
             </div>
             <div style={{display:"flex", justifyContent:"center"}}>
                 <div className="facility">
@@ -194,7 +211,7 @@ export function Room() {
             </div>
 
             <div className="pricetag">
-                住宿須知 Stay Explain
+                <img className='pricetitle' src={title04} alt="title04"/>
             </div>
             <div style={{display:"flex", justifyContent:"center"}}>
                 <div className="facility">
@@ -220,7 +237,7 @@ export function Room() {
 
 
             <div className="pricetag">
-                訂房須知 Order Explain
+                <img className='pricetitle' src={title05} alt="title05"/>
             </div>
             <div style={{display:"flex", justifyContent:"center"}}>
                 <div className="facility">

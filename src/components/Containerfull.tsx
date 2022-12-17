@@ -5,10 +5,6 @@ import InfoIcon from '@mui/icons-material/Info';
 import InsertLinkIcon from '@mui/icons-material/InsertLink';
 import Nav from 'react-bootstrap/Nav';
 import { NavLink } from 'react-router-dom'
-import BedIcon from '@mui/icons-material/Bed';
-import LandscapeIcon from '@mui/icons-material/Landscape';
-import YardIcon from '@mui/icons-material/Yard';
-import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 
 type Containerprops ={
     children: any;

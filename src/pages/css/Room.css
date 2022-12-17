@@ -1,4 +1,17 @@
-/* Room */
+.Roomcontainer {
+  /* background-image: url("mainbg-2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; */
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(0, 163, 255, 1) 100%
+  );
+  fontfamily: "Signika Negative";
+  font-weight: 600;
+}
 .roominfo {
   display: flex;
   flex-direction: column;
@@ -8,7 +21,6 @@
   padding: 10px;
   gap: 10px;
   font-size: 15px;
-  background-color: #f0f8ff;
 }
 .roomphotos {
   width: 90vw;
@@ -22,19 +34,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  gap: 20px;
+  gap: 10px;
   background-color: white;
-  padding: 10px;
-  border: 2px solid black;
-  border-radius: 20px;
-  width: 350px;
+  border: 20px solid white;
+  border-radius: 5px;
+  width: 250px;
 }
 .roomphoto > img {
-  width: 300px;
+  width: 230px;
+  border: 2px solid black;
 }
 .roomphoto:hover {
   transition: 0.3s ease-in-out;
   box-shadow: 0 0 20px 3px rgba(168, 168, 168, 0.681);
+}
+.pricetitle {
+  min-width: 30%;
 }
 .roomtitle {
   display: flex;
@@ -49,12 +64,24 @@
   flex-direction: column;
   justify-content: center;
 }
+.bankdetail {
+  position: relative;
+  bottom: -264px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  gap: 10px;
+}
+.priceboardwithbankaccount {
+  display: flex;
+  justify-content: space-evenly;
+}
 .pricetag {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 10px;
   font-size: 18px;
-  background-color: #f6f1d1;
   padding: 10px;
   border-radius: 20px;
 }
@@ -152,4 +179,12 @@
     font-weight: 700 !important;
     padding: 5px !important;
   }
+  .priceboardwithbankaccount {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* .picleft {
+    width: 100%;
+  } */
 }

@@ -37,7 +37,7 @@
   font-size: 15px;
   padding: 0 !important;
 }
-.nav-link:hover {
+.mobile > .nav-link:hover {
   transition: 0.3s ease-in-out;
   box-shadow: 0 5px 20px 3px rgba(168, 168, 168, 0.681);
 }
