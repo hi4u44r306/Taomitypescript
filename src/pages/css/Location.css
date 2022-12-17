@@ -1,0 +1,28 @@
+.Location {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(77, 191, 255, 1) 100%
+  );
+}
+.locationcontainer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.locations {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.locationtitle {
+  width: 30vw;
+}
+.location {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40vw;
+  font-size: 12px;
+}

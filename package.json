@@ -19,7 +19,8 @@
     "react-bootstrap": "^2.7.0",
     "react-bootstrap-sidebar-menu": "^2.0.3",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.5"
+    "react-router-dom": "^6.4.5",
+    "react-spinners": "^0.13.7"
   },
   "devDependencies": {
     "@types/node-sass": "^4.11.3",

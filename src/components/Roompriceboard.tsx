@@ -34,7 +34,7 @@ const rows = [
 
 export function Roompriceboard() {
   return (
-    <div className='d-flex'>
+    <div className='d-flex p-2'>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: "70vw" }} className="pricetable" aria-label="simple table">
           <TableHead>

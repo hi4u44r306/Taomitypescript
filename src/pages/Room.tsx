@@ -131,10 +131,10 @@ export function Room() {
             </div>
 
             <div className="price">
-                <div className="pricetag">
-                    <img className='pricetitle' src={title01} alt="title01"/>
-                </div>
                 
+                    <div className="pricetag">
+                        <img className='pricetitle' src={title01} alt="title01"/>
+                    </div>
                 <div className='priceboardwithbankaccount'>
                     <div>
                         <div className='bankdetail'>

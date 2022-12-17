@@ -67,7 +67,7 @@ export function About() {
                                 </div>
                             </div>
                         </div>
-                        <div className="photo">
+                        <div className="bottomphoto">
                             <div className="poemcontainer">
                                 <div className="poem">
                                     <span> </span>

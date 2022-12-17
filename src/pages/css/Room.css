@@ -60,12 +60,15 @@
 }
 .price {
   position: relative;
+  top: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .bankdetail {
   position: relative;
+  /* bottom: -114px;
+  left: 155px; */
   bottom: -264px;
   left: 20px;
   display: flex;
@@ -73,9 +76,15 @@
   font-size: 15px;
   gap: 10px;
 }
+/* .bankdetail > span {
+  width: 145px;
+} */
 .priceboardwithbankaccount {
+  position: relative;
+  top: -180px;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 .pricetag {
   display: flex;
@@ -88,9 +97,10 @@
 .facility {
   display: flex;
   align-items: flex-start;
+  justify-content: flex-start;
   gap: 30px;
   padding: 15px;
-  width: 65vw;
+  width: 80vw;
 }
 
 /* Roomdetail */
@@ -157,7 +167,7 @@
     align-content: start;
     align-items: start;
     gap: 10px;
-    padding: 30px;
+    padding: 15px;
     width: 95vw;
   }
   .roomphotos {

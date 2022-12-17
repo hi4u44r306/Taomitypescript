@@ -13,40 +13,44 @@
   font-weight: 600;
 }
 .mainphotocontainer {
+  padding: 5px;
   display: flex;
   justify-content: center;
 }
 .aboutphotocontainer {
   overflow: auto;
-  width: 65%;
+  /* width: 65%; */
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .aboutphoto {
   font-weight: 600;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  padding: 20px;
+  justify-content: center;
+  width: 95vw;
   gap: 10px;
 }
 .aboutimg {
-  minwidth: 50%;
-  maxwidth: 100%;
-  /* width: 30%; */
+  /* minwidth: 50%;
+  maxwidth: 100%; */
+  width: 30vw;
   height: auto;
 }
 .poemcontainer {
   display: flex;
   flex-direction: column;
   font-size: 12px;
-  padding: 20px;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 5px;
 }
 .poem {
   display: flex;
   margin: 10px;
-  gap: 20px;
+  gap: 10px;
 }
 .poemoneline {
   display: flex;
@@ -54,11 +58,44 @@
   /* margin: 10px; */
   gap: 20px;
 }
+.bottomphoto {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 585px) {
   .about {
     background-image: url("mainbg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .bottomphoto {
+    flex-direction: column;
+  }
+  .aboutimg {
+    width: 50vw;
+  }
+  .aboutphoto {
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90vw;
+    padding: 20px;
+    gap: 10px;
+    border-bottom: 1px solid black;
+  }
+  .poemcontainer {
+    position: relative;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 90vw;
+    padding: 20px;
+    gap: 10px;
   }
 }
