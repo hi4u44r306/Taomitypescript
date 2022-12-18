@@ -1,0 +1,34 @@
+.photobighorzcheckdetailbtn {
+  position: relative;
+  top: -35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 15px;
+  margin: 10px;
+  cursor: pointer;
+}
+.photobighorzimgcontainer {
+  width: fit-content;
+}
+.photobighorzimg {
+  width: 100% !important;
+}
+.photobighorzclosebtn {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  padding: 10px 20px 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .photobighorzimgcontainer {
+    width: 60vw;
+  }
+}

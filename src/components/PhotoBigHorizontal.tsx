@@ -1,8 +1,8 @@
 import React from "react";
-import { Box, Button, Modal, Typography } from '@mui/material'
-import BedIcon from '@mui/icons-material/Bed';
+import { Box, Modal} from '@mui/material'
 import SearchIcon from '@mui/icons-material/Search';
-import '../pages/css/PhotoBigHorz.css';
+import '../assets/css/PhotoBigHorz.css'
+import closebtn from '../assets/img/closebtn.png'
 
 const style = {
     display: 'flex',
@@ -32,19 +32,20 @@ export function PhotoBigHorizontal({img}:RoomdetailProps){
 
     return (
         <React.Fragment>
-        <div className="photocheckdetailbtn" onClick={handleOpen}><SearchIcon fontSize="small"/></div>
+        <div className="photobighorzcheckdetailbtn" onClick={handleOpen}><SearchIcon fontSize="small"/></div>
         <Modal
             hideBackdrop
             open={open}
             onClose={handleClose}
-            className="photobigroomdetail"
         >
-            <Box sx={{ ...style }} className="horzphotobigimgcontainer">
+            <Box sx={{ ...style }} className="photobighorzimgcontainer">
             <div className="d-flex justify-content-center">
-                <img className="photobigimg" src={img} alt="room10"/>
+                <img className="photobighorzimg" src={img} alt="room10"/>
             </div>
            
-            <div className="photobigclosebtn" onClick={handleClose}>關閉視窗</div>
+            <div className="photobighorzclosebtn" onClick={handleClose}>
+                <img style={{width:"30px"}} src={closebtn} alt="closebtn"/> 關閉
+            </div>
             </Box>
         </Modal>
         </React.Fragment>

@@ -1,16 +1,6 @@
-.roomdetail {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%);
-  padding: 32px;
-  border-radius: 40px;
-}
-.roomcheckdetailbtn {
+.photobigcheckdetailbtn {
   position: relative;
+  top: -35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,13 +9,13 @@
   margin: 10px;
   cursor: pointer;
 }
-.roomimgcontainer {
+.photobigimgcontainer {
   width: 60vw;
 }
-.roomimg {
-  width: 80% !important;
+.photobigimg {
+  width: 100% !important;
 }
-.roomclosebtn {
+.photobigclosebtn {
   display: flex;
   justify-content: center;
   background-color: red;
@@ -35,10 +25,11 @@
   margin: 10px;
   cursor: pointer;
   font-size: 10px;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
-  .roomimgcontainer {
+  .photobigimgcontainer {
     width: 90vw;
   }
 }

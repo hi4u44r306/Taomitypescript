@@ -1,0 +1,34 @@
+.roomcheckdetailbtn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 15px;
+  margin: 10px;
+  cursor: pointer;
+}
+.roomimgcontainer {
+  width: 60vw;
+}
+.roomimg {
+  width: 80% !important;
+}
+.roomclosebtn {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  padding: 10px 20px 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 10px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .roomimgcontainer {
+    width: 90vw;
+  }
+}

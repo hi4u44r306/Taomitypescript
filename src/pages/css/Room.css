@@ -27,7 +27,8 @@
   margin: 10px;
   padding: 10px;
   gap: 10px;
-  font-size: 15px;
+  font-size: 13px;
+  font-weight: 700;
 }
 .roomphotos {
   width: 90vw;

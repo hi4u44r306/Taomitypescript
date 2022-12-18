@@ -1,8 +1,10 @@
 import React from "react";
-import { Box, Button, Modal, Typography } from '@mui/material'
+import { Box, Modal } from '@mui/material'
 import BedIcon from '@mui/icons-material/Bed';
 import SearchIcon from '@mui/icons-material/Search';
-import '../pages/css/PhotoBig.css';
+import '../assets/css/Roomdetail.css'
+import closebtn from '../assets/img/closebtn.png'
+
 
 const style = {
     display: 'flex',
@@ -20,9 +22,8 @@ const style = {
   };
 type RoomdetailProps = {
     img: string
-    name: string
 };
-export function Roomdetail({img, name}:RoomdetailProps){
+export function Roomdetail({img}:RoomdetailProps){
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => {
         setOpen(true);
@@ -38,14 +39,15 @@ export function Roomdetail({img, name}:RoomdetailProps){
             hideBackdrop
             open={open}
             onClose={handleClose}
-            className="photobigroomdetail"
         >
             <Box sx={{ ...style }} className="roomimgcontainer">
             <div className="d-flex justify-content-center">
                 <img className="roomimg" src={img} alt="room10"/>
             </div>
            
-            <div className="roomclosebtn" onClick={handleClose}>關閉視窗</div>
+            <div className="roomclosebtn" onClick={handleClose}>
+                <img style={{width:"30px"}} src={closebtn} alt="closebtn"/> 關閉
+            </div>
             </Box>
         </Modal>
         </React.Fragment>
