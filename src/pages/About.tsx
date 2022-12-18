@@ -1,10 +1,9 @@
-import "./css/About.css"
+import "./css/about.css"
 import pic01 from '../assets/img/pic01.jpg';
 import pic02 from '../assets/img/pic02.jpg';
 import titleword from '../assets/img/titleword.jpg';
 import mainbg from '../assets/img/mainbg.jpg';
 import { Containerfull } from "../components/Containerfull";
-import Carousel from 'react-bootstrap/Carousel';
 import { SetStateAction, useState } from 'react';
 
 export function About() {
