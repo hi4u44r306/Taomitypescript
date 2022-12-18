@@ -124,7 +124,7 @@ export function Room() {
                             <div className='roomphoto' key={room.name}>
                                 <div className='roomtitle'> {room.name}</div>
                                 <img src={room.image} alt={"#"}/>
-                                <Roomdetail img={room.image} name={room.name}/>
+                                <Roomdetail img={room.image}/>
                             </div>
                         )
                     })
