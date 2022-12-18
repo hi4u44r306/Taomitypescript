@@ -1,3 +1,6 @@
+.offcanvasNavbar {
+  background-color: #534218;
+}
 .offcanvas.offcanvas-end {
   width: fit-content !important;
 }
