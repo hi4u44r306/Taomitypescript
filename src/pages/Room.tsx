@@ -1,4 +1,4 @@
-import titleword from '.././assets/img/titleword.jpg'
+import roomtitleword from '.././assets/img/roomtitleword.jpg'
 import room1 from '.././assets/img/roompic01.jpg'
 import room2 from '.././assets/img/roompic02.jpg'
 import room3 from '.././assets/img/roompic03.jpg'
@@ -100,7 +100,9 @@ export function Room() {
   return (
     <Containerfull>
         <div className="Roomcontainer">
-            <img style={{width:"100%"}} src={titleword} alt="#"/>
+            <div className='roomtitlewordcontainer'>
+                <img style={{width:"70vw"}} src={roomtitleword} alt="#"/>
+            </div>
             <div className="roominfo">
                 <span>
                     若瑟桃米的每一間房各有特色 每開一扇門 都是一個驚喜

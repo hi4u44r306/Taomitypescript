@@ -16,30 +16,9 @@ export function About() {
     return (
         <Containerfull>
             <div className="about">
-                <img src={titleword} alt="#" style={{width:"100%"}}/>
-                {/* <div className="abouttitle">
-                    <span style={{ fontSize: "25px" }}>關於若瑟桃米</span>
-                    <span style={{ fontSize: "15px" }}>Taomi Profile</span>
-                </div> */}
-                {/* <div style={{width:"30%", height:"300px"}}>
-                    <Carousel activeIndex={index} onSelect={handleSelect} controls={false} fade>
-                    <Carousel.Item interval={2000}>
-                        <img
-                        className="d-block w-100"
-                        src={pic01}
-                        alt="First slide"
-                        />
-                    </Carousel.Item>
-
-                    <Carousel.Item interval={2000}>
-                        <img
-                        className="d-block w-100"
-                        src={pic02}
-                        alt="Second slide"
-                        />
-                    </Carousel.Item>
-                    </Carousel>
-                </div> */}
+                <div className="abouttitlewordcontainer">
+                    <img src={titleword} alt="#" style={{width:"70vw"}}/>
+                </div>
                 <div className="mainphotocontainer">
                     <div className="aboutphotocontainer">
                         <div className="aboutphoto">

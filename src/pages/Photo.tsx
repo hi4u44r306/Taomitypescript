@@ -54,7 +54,9 @@ export function Photo(){
     return (
         <Containerfull>
             <div className="PhotoMain">
-                <img src={titleword} alt="#"/>
+                <div className="phototitlewordcontainer">
+                    <img style={{width: "70vw"}} src={titleword} alt="#"/>
+                </div>
                 <div className="photos">
                     {
                         photodb.map(photo => {

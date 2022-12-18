@@ -12,6 +12,10 @@
   fontfamily: "Signika Negative";
   font-weight: 600;
 }
+.roomtitlewordcontainer {
+  display: flex;
+  justify-content: center;
+}
 .roominfo {
   display: flex;
   flex-direction: column;
@@ -27,22 +31,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 10px;
+  gap: 20px;
 }
 .roomphoto {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  gap: 10px;
-  background-color: white;
-  border: 20px solid white;
+  /* background-color: rgba(168, 168, 168, 0.5); */
+  background-color: #51b9ff;
+  border: 10px solid #51b9ff;
   border-radius: 5px;
   width: 250px;
 }
 .roomphoto > img {
   width: 230px;
   border: 2px solid black;
+  border-radius: 5px;
 }
 .roomphoto:hover {
   transition: 0.3s ease-in-out;
@@ -171,7 +176,7 @@
     width: 95vw;
   }
   .roomphotos {
-    gap: 5px;
+    gap: 20px;
   }
   .roomphoto {
     display: flex;

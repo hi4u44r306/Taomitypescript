@@ -1,17 +1,21 @@
 .PhotoMain {
-  display: flex;
-  flex-direction: column;
-}
-.test {
-  display: flex;
-}
-.photos {
   background: rgb(255, 255, 255);
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 1) 0%,
     rgba(77, 191, 255, 1) 100%
   );
+  display: flex;
+  flex-direction: column;
+}
+.phototitlewordcontainer {
+  display: flex;
+  justify-content: center;
+}
+.test {
+  display: flex;
+}
+.photos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;

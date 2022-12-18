@@ -47,8 +47,7 @@ export function Travel(){
                 :
                 (
                     <div>
-
-                        <div>
+                        <div className="traveltitlewordcontainer">
                             <img className="TravelTitleWord" src={titleword} alt="titleword"/>
                         </div>
                         {/* 1 暨南大學 */}

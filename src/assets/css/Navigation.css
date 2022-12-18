@@ -5,11 +5,11 @@
   padding: 0 !important;
 }
 .navbackground {
-  background-color: #f4f9ff;
-  height: 10vh;
-  // display: flex;
+  background-color: #534218;
   align-items: center;
   align-content: center;
+  padding: 0 !important;
+  height: 10vh;
 }
 
 .navbar-toggler {
@@ -17,7 +17,7 @@
   outline: none !important;
 }
 .toggle {
-  // background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255) !important;
   border: none;
   outline: none;
   font-weight: 700;
@@ -35,7 +35,7 @@
   font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: 15px;
-  padding: 0 !important;
+  padding: 5px !important;
 }
 .mobile > .nav-link:hover {
   transition: 0.3s ease-in-out;
