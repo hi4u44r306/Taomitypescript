@@ -1,3 +1,11 @@
+.btn-close {
+  background-color: #ffffff;
+}
+.btn-close:focus {
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
 .offcanvasNavbar {
   background-color: #534218;
 }
