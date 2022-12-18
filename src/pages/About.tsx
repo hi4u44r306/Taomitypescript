@@ -1,4 +1,4 @@
-import "./css/about.css"
+import "./css/About.css"
 import pic01 from '../assets/img/pic01.jpg';
 import pic02 from '../assets/img/pic02.jpg';
 import titleword from '../assets/img/titleword.jpg';
