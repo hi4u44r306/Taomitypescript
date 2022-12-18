@@ -58,7 +58,7 @@
     align-items: center;
   }
   .locationtitle {
-    min-width: 40vw;
+    min-width: 50vw;
   }
   .locations {
     display: flex;
