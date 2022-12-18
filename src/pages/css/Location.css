@@ -49,6 +49,9 @@
 }
 
 @media (max-width: 768px) {
+  .locationtitleword {
+    width: 100%;
+  }
   .locationcontainer {
     display: flex;
     flex-direction: column;

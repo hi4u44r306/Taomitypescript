@@ -45,6 +45,9 @@
 }
 
 @media (max-width: 768px) {
+  .TravelTitleWord {
+    width: 100%;
+  }
   .travelsection {
     display: flex;
     align-items: center;
@@ -59,7 +62,10 @@
     background-color: white;
     /* position: relative; */
     /* left: -80px; */
-    min-width: 80vw;
+    max-width: 80vw;
+  }
+  .travelspan {
+    max-width: 70vw;
   }
   .travelimage {
     min-width: 80vw;

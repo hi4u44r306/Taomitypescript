@@ -17,7 +17,7 @@ export function About() {
         <Containerfull>
             <div className="about">
                 <div className="abouttitlewordcontainer">
-                    <img src={titleword} alt="#" style={{width:"70vw"}}/>
+                    <img src={titleword} alt="#" className="abouttitleword"/>
                 </div>
                 <div className="mainphotocontainer">
                     <div className="aboutphotocontainer">

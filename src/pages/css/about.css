@@ -8,6 +8,9 @@
   display: flex;
   justify-content: center;
 }
+.abouttitleword {
+  width: 70vw;
+}
 .abouttitle {
   display: flex;
   justify-content: center;
@@ -70,6 +73,9 @@
 }
 
 @media (max-width: 768px) {
+  .abouttitleword {
+    width: 100%;
+  }
   .about {
     background-image: url("mainbg.jpg");
     background-repeat: no-repeat;

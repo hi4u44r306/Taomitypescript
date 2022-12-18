@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Button, Modal, Typography } from '@mui/material'
 import BedIcon from '@mui/icons-material/Bed';
 import SearchIcon from '@mui/icons-material/Search';
-import '../pages/css/Room.css';
+import '../pages/css/PhotoBig.css';
 
 const style = {
     display: 'flex',
@@ -12,7 +12,6 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 400,
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
@@ -21,12 +20,9 @@ const style = {
   };
 type RoomdetailProps = {
     img: string
-    name: string;
-    normal: string;
-    holiday: string;
-    describe: string;
+    name: string
 };
-export function Roomdetail({img, name, normal, holiday, describe}:RoomdetailProps){
+export function Roomdetail({img, name}:RoomdetailProps){
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => {
         setOpen(true);
@@ -37,30 +33,19 @@ export function Roomdetail({img, name, normal, holiday, describe}:RoomdetailProp
 
     return (
         <React.Fragment>
-        <div className="checkdetailbtn" onClick={handleOpen}><SearchIcon fontSize="small"/> 查看細節</div>
+        <div className="roomcheckdetailbtn" onClick={handleOpen}><SearchIcon fontSize="small"/></div>
         <Modal
             hideBackdrop
             open={open}
             onClose={handleClose}
-            className="roomdetail"
+            className="photobigroomdetail"
         >
-            <Box sx={{ ...style, width: 400 }}>
-            <Typography id="modal-modal-title" variant="h6" component="h2">
-                <div className='roomtitle'><BedIcon/> {name}</div>
-            </Typography>
+            <Box sx={{ ...style }} className="roomimgcontainer">
             <div className="d-flex justify-content-center">
-                <img src={img} alt="room10"/>
+                <img className="roomimg" src={img} alt="room10"/>
             </div>
-            <div className="normalprice">
-                平日優惠價 : {normal}
-            </div>
-            <div className="holidayprice">
-                假日優惠價 : {holiday}
-            </div>
-            <div className="describe">
-                備註 : {describe}
-            </div>
-            <div className="closebtn" onClick={handleClose}>關閉視窗</div>
+           
+            <div className="roomclosebtn" onClick={handleClose}>關閉視窗</div>
             </Box>
         </Modal>
         </React.Fragment>

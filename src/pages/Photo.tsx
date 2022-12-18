@@ -55,7 +55,7 @@ export function Photo(){
         <Containerfull>
             <div className="PhotoMain">
                 <div className="phototitlewordcontainer">
-                    <img style={{width: "70vw"}} src={titleword} alt="#"/>
+                    <img className="phototitleword" src={titleword} alt="#"/>
                 </div>
                 <div className="photos">
                     {

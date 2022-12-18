@@ -101,7 +101,7 @@ export function Room() {
     <Containerfull>
         <div className="Roomcontainer">
             <div className='roomtitlewordcontainer'>
-                <img style={{width:"70vw"}} src={roomtitleword} alt="#"/>
+                <img className='roomtitleword' src={roomtitleword} alt="#"/>
             </div>
             <div className="roominfo">
                 <span>
@@ -124,7 +124,7 @@ export function Room() {
                             <div className='roomphoto' key={room.name}>
                                 <div className='roomtitle'> {room.name}</div>
                                 <img src={room.image} alt={"#"}/>
-                                {/* <Roomdetail img={room.image} name={room.name} normal={room.noramlprice} holiday={room.holidayprice} describe={room.describe}/> */}
+                                <Roomdetail img={room.image} name={room.name}/>
                             </div>
                         )
                     })
@@ -169,14 +169,14 @@ export function Room() {
             <div style={{display:"flex", justifyContent:"center"}}>
                 <div className="facility">
                     <div>
-                        <div style={{display:"flex", justifyContent:"start", margin:"5px", fontSize:15, color:"red"}}>
-                            ‧ 乾濕分離衛浴　‧ 電視　‧ 無線網路(請自備電腦)
+                        <div className='facilityspanred'>
+                            乾濕分離衛浴　‧ 電視　‧ 無線網路(請自備電腦)
                         </div>
-                        <div style={{display:"flex", justifyContent:"start", margin:"5px", fontSize:15, color:"red"}}>
-                            ‧ 冷氣空調　‧ 梳妝台　‧ 盥洗用具
+                        <div className='facilityspanred'>
+                            冷氣空調　‧ 梳妝台　‧ 盥洗用具
                         </div>
-                        <div style={{display:"flex", justifyContent:"start", margin:"5px", fontSize:15, color:"red"}}>
-                            ‧ 吹風機　‧ 數位電視  ‧ 通舖房會依人數鋪設軟床墊  
+                        <div className='facilityspanred'>
+                            吹風機　‧ 數位電視  ‧ 通舖房會依人數鋪設軟床墊  
                         </div>
                     </div>
                     <div style={{display:"flex", gap:"10px"}}>
@@ -193,20 +193,20 @@ export function Room() {
             <div style={{display:"flex", justifyContent:"center"}}>
                 <div className="facility">
                     <div>
-                        <div style={{display:"flex", justifyContent:"start", margin:"5px", fontSize:15}}>
-                            ．請珍惜水電資源。
+                        <div className='facilityspan'>
+                            請珍惜水電資源。
                         </div>
-                        <div style={{display:"flex", justifyContent:"start", margin:"5px", fontSize:15}}>
-                            ．11點過後請輕聲細語
+                        <div className='facilityspan'>
+                            11點過後請輕聲細語
                         </div>
-                        <div style={{display:"flex", justifyContent:"start", margin:"5px", fontSize:15}}>
-                            ．儘可能晚上11點前洗澡完畢，以免影響別人  
+                        <div className='facilityspan'>
+                            儘可能晚上11點前洗澡完畢，以免影響別人  
                         </div>
-                        <div style={{display:"flex", justifyContent:"start", margin:"5px", fontSize:15}}>
-                            ．儘可能在主餐廳用餐，以免食物掉在室內，招來螞蟻蚊蟲 
+                        <div className='facilityspan'>
+                            儘可能在主餐廳用餐，以免食物掉在室內，招來螞蟻蚊蟲 
                         </div>
-                        <div style={{display:"flex", justifyContent:"start", margin:"5px", fontSize:15}}>
-                            ．外出請關冷氣、電燈  
+                        <div className='facilityspan'>
+                            外出請關冷氣、電燈  
                         </div>
                     </div>
                 </div>
@@ -219,18 +219,18 @@ export function Room() {
                 <div className="facility">
                     <div>
                         <div style={{display:"flex", justifyContent:"start", flexDirection:"column", margin:"5px", fontSize:15, lineHeight:"25px"}}>
-                            <div>．住宿均含早餐。<span style={{color:"red"}}>(午、晚餐請在外用餐)</span></div>
-                            <div>．早餐供應<b>AM 8:00~AM 9:00</b></div>
-                            <div>．Check in 進房 : <b>PM 15:30 以後</b></div>
-                            <div>．Check out 退房 : <b>AM 11:00 以前</b> </div>
-                            <div>．為避免影響其他房客的住宿權益，請勿攜帶寵物。</div>
-                            <div>．本民宿全面禁煙。</div>
-                            <div>．本民宿距離紙教堂步行約5分。紙教堂可做為結婚禮堂、演奏、攝影、寫生、禮拜禱告、解說。</div>
-                            <div>．本民宿另提供： 自行車20多輛、室內停車空間，晚間上鎖。</div>
-                            <div>．入住時請先檢查房間是否乾淨，若有不乾淨請先跟我們反應，我們會立即處理！</div>
-                            <div>．進入本民宿之巷道可通行3.5T之卡車，但對都會區來的貴賓可能感覺狹窄且彎曲。</div>
-                            <div>．若你覺得進出本巷道有疑慮，請事先告知，我會引導至另一個較好出入的停車場</div>
-                            <div>．否則若愛車擦傷，本民宿不負賠償之責。</div>
+                            <span className='facilityspan'>住宿均含早餐。<span style={{color:"red"}}>(午、晚餐請在外用餐)</span></span>
+                            <span className='facilityspan'>早餐供應<b>AM 8:00~AM 9:00</b></span>
+                            <span className='facilityspan'>Check in 進房 : <b>PM 15:30 以後</b></span>
+                            <span className='facilityspan'>Check out 退房 : <b>AM 11:00 以前</b> </span>
+                            <span className='facilityspan'>為避免影響其他房客的住宿權益，請勿攜帶寵物。</span>
+                            <span className='facilityspan'>本民宿全面禁煙。</span>
+                            <span className='facilityspan'>本民宿距離紙教堂步行約5分。紙教堂可做為結婚禮堂、演奏、攝影、寫生、禮拜禱告、解說。</span>
+                            <span className='facilityspan'>本民宿另提供： 自行車20多輛、室內停車空間，晚間上鎖。</span>
+                            <span className='facilityspan'>入住時請先檢查房間是否乾淨，若有不乾淨請先跟我們反應，我們會立即處理！</span>
+                            <span className='facilityspan'>進入本民宿之巷道可通行3.5T之卡車，但對都會區來的貴賓可能感覺狹窄且彎曲。</span>
+                            <span className='facilityspan'>若你覺得進出本巷道有疑慮，請事先告知，我會引導至另一個較好出入的停車場</span>
+                            <span className='facilityspan'>否則若愛車擦傷，本民宿不負賠償之責。</span>
                             
                         </div>
                     </div>

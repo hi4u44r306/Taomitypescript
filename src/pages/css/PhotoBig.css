@@ -1,4 +1,4 @@
-.photobigroomdetail {
+.roomdetail {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -9,9 +9,8 @@
   padding: 32px;
   border-radius: 40px;
 }
-.photocheckdetailbtn {
+.roomcheckdetailbtn {
   position: relative;
-  top: -35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,13 +19,13 @@
   margin: 10px;
   cursor: pointer;
 }
-.photobigimgcontainer {
+.roomimgcontainer {
   width: 60vw;
 }
-.photobigimg {
+.roomimg {
   width: 80% !important;
 }
-.photobigclosebtn {
+.roomclosebtn {
   display: flex;
   justify-content: center;
   background-color: red;
@@ -37,19 +36,9 @@
   cursor: pointer;
   font-size: 10px;
 }
-.horzontial {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 100%;
-}
 
 @media (max-width: 768px) {
-  .photobigimgcontainer {
+  .roomimgcontainer {
     width: 90vw;
   }
 }
