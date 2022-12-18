@@ -13,13 +13,6 @@
   fontfamily: "Signika Negative";
   font-weight: 600;
 }
-.roommainbody {
-  /* background-image: url("mainbg-2.jpg");
-  background-repeat: no-repeat;
-  background-size: 100vw;
-  background-position: top center;
-  background-attachment: fixed; */
-}
 .roomtitlewordcontainer {
   display: flex;
   justify-content: center;
