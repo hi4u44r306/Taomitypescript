@@ -52,9 +52,7 @@ export function Travel(){
                         </div>
                         {/* 1 暨南大學 */}
                         <div className="travelsection">
-                            <div>
-                                <img className="travelimage" src={pic01}/>
-                            </div>
+                            <img className="travelimage" src={pic01}/>
                             <div className="traveldetail">
                                 <div>
                                     <img className="traveltitle" src={title01}/>
@@ -82,16 +80,12 @@ export function Travel(){
                                     </span>
                                 </div>
                             </div>
-                            <div>
-                                <img className="travelimage" src={pic02}/>
-                            </div>
+                            <img className="travelimage" src={pic02}/>
                         </div>
 
                         {/* 3 水上瀑布 */}
                         <div className="travelsection">
-                            <div>
-                                <img className="travelimage" src={pic03}/>
-                            </div>
+                            <img className="travelimage" src={pic03}/>
                             <div className="traveldetail">
                                 <div>
                                     <img className="traveltitle" src={title03}/>
@@ -116,16 +110,12 @@ export function Travel(){
                                     </span>
                                 </div>
                             </div>
-                            <div>
-                                <img className="travelimage" src={pic04}/>
-                            </div>
+                            <img className="travelimage" src={pic04}/>
                         </div>
 
                         {/* 5 草湳濕地 */}
                         <div className="travelsection">
-                            <div>
-                                <img className="travelimage" src={pic05}/>
-                            </div>
+                            <img className="travelimage" src={pic05}/>
                             <div className="traveldetail">
                                 <div>
                                     <img className="traveltitle" src={title05}/>
@@ -150,16 +140,12 @@ export function Travel(){
                                     </span>
                                 </div>
                             </div>
-                            <div>
-                                <img className="travelimage" src={pic06}/>
-                            </div>
+                            <img className="travelimage" src={pic06}/>
                         </div>
 
                         {/* 7 日月潭文武廟 */}
                         <div className="travelsection">
-                            <div>
-                                <img className="travelimage" src={pic07}/>
-                            </div>
+                            <img className="travelimage" src={pic07}/>
                             <div className="traveldetail">
                                 <div>
                                     <img className="traveltitle" src={title07}/>
@@ -182,16 +168,12 @@ export function Travel(){
                                     <span>九族文化村是以原住民文化為主題之遊樂園區，園區內可藉由表演以及原住民住屋等了解原住民文化，亦有許多遊樂設施、纜車以及相關活動。</span>
                                 </div>
                             </div>
-                            <div>
-                                <img className="travelimage" src={pic08}/>
-                            </div>
+                            <img className="travelimage" src={pic08}/>
                         </div>
 
                         {/* 9 頭社盆地 */}
                         <div className="travelsection">
-                            <div>
-                                <img className="travelimage" src={pic09}/>
-                            </div>
+                            <img className="travelimage" src={pic09}/>
                             <div className="traveldetail">
                                 <div>
                                     <img className="traveltitle" src={title09}/>
@@ -205,9 +187,7 @@ export function Travel(){
                         {/* 10 三育高中 */}
                         <div className="travelsection">
                             <div className="traveldetail">
-                                <div>
-                                    <img className="traveltitle" src={title10}/>
-                                </div>
+                                <img className="traveltitle" src={title10}/>
                                 <div className="travelspan">
                                     <span>於1951年創校，設有中學及大專院校體系，迷人的紅磚建築和一望無際的草地， 四周枝葉扶疏、隨四季更迭變換景緻，充滿異國風情，吸引眾多遊客前來散步、 取景。</span>
                                 </div>
@@ -219,9 +199,7 @@ export function Travel(){
 
                         {/* 11 日月潭纜車 */}
                         <div className="travelsection">
-                            <div>
-                                <img className="travelimage" src={pic11}/>
-                            </div>
+                            <img className="travelimage" src={pic11}/>
                             <div className="traveldetail">
                                 <div>
                                     <img className="traveltitle" src={title11}/>

@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  box-shadow: 0 0 8px 8px white inset;
+  /* box-shadow: 0 0 8px 8px white inset; */
 }
 .homebg {
   max-width: 100%;
-  box-shadow: 0 0 8px 8px white inset;
+  /* box-shadow: 0 0 8px 8px white inset; */
 }
