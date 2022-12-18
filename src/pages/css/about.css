@@ -1,9 +1,15 @@
 .about {
-  background-image: url("mainbg.jpg");
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(0, 163, 255, 1) 100%
+  );
+  /* background-image: url("mainbg.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top center;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 .abouttitlewordcontainer {
   display: flex;
@@ -71,10 +77,10 @@
 }
 
 @media (max-width: 768px) {
-  .about {
+  /* .about {
     background-size: 120vh;
     background-attachment: fixed;
-  }
+  } */
   .abouttitleword {
     width: 100%;
   }
