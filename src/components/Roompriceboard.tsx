@@ -36,7 +36,7 @@ export function Roompriceboard() {
   return (
     <div className='d-flex p-2'>
       <TableContainer component={Paper}>
-        <Table sx={{ minWidth: "70vw" }} className="pricetable" aria-label="simple table">
+        <Table className="pricetable" aria-label="simple table">
           <TableHead>
             <TableRow>
               <TableCell className="pricetablecell" align="center">寢&nbsp;宮</TableCell>

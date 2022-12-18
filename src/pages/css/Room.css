@@ -200,10 +200,6 @@
     align-items: center;
     width: 250px;
   }
-  .pricetable {
-    width: 90vw;
-    border: 5px solid gray;
-  }
   .pricetablecell {
     font-family: "Helvetica Neue" !important;
     font-size: 10px !important;

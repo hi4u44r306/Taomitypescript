@@ -1,6 +1,5 @@
 .pricetable {
-  width: 90vw;
-  border: 5px solid gray;
+  min-width: 70vw;
 }
 .pricetablecell {
   font-family: "Helvetica Neue" !important;
@@ -19,8 +18,7 @@ tr {
 
 @media (max-width: 768px) {
   .pricetable {
-    width: 90vw;
-    border: 5px solid gray;
+    minwidth: 100vw;
   }
   .pricetablecell {
     font-family: "Helvetica Neue" !important;
