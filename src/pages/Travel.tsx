@@ -171,7 +171,7 @@ export function Travel(){
                             <img className="travelimage" src={pic08}/>
                         </div>
 
-                        {/* 9 頭社盆地 */}
+                        {/* 9  三育高中 */}
                         <div className="travelsection">
                             <img className="travelimage" src={pic09}/>
                             <div className="traveldetail">
@@ -184,7 +184,7 @@ export function Travel(){
                             </div>
                         </div>
 
-                        {/* 10 三育高中 */}
+                        {/* 10 頭社活盆地 */}
                         <div className="travelsection">
                             <div className="traveldetail">
                                 <img className="traveltitle" src={title10}/>
@@ -192,9 +192,7 @@ export function Travel(){
                                     <span>於1951年創校，設有中學及大專院校體系，迷人的紅磚建築和一望無際的草地， 四周枝葉扶疏、隨四季更迭變換景緻，充滿異國風情，吸引眾多遊客前來散步、 取景。</span>
                                 </div>
                             </div>
-                            <div>
                                 <img className="travelimage" src={pic10}/>
-                            </div>
                         </div>
 
                         {/* 11 日月潭纜車 */}
@@ -211,9 +209,6 @@ export function Travel(){
                         </div>
                         {/* 12 明潭傳奇風物館 */}
                         <div className="travelsection">
-                            {/* <div>
-                                <img className="travelimage" src={title12}/>
-                            </div> */}
                             <div className="traveldetail">
                                 <div>
                                     <img className="traveltitle" src={title12}/>
@@ -225,9 +220,6 @@ export function Travel(){
                         </div>
                         {/* 13 向山行政暨遊客中心 */}
                         <div className="travelsection">
-                            {/* <div>
-                                <img className="travelimage" src={title13}/>
-                            </div> */}
                             <div className="traveldetail">
                                 <div>
                                     <img className="traveltitle" src={title13}/>

@@ -16,7 +16,7 @@
 .travelsection {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 30px;
   gap: 10px;
 }
